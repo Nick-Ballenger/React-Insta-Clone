@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import './App.css';
 
 
 const Comment  = props => {
     return(
-        <div>
-            <p>{props.username} </p>
+        <div className="comment">
+            <h4>{props.username} </h4>
             <p>{props.text}</p>
-            <p>{props.likes}</p>
+            
         </div>
     )
 }

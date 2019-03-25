@@ -20,7 +20,7 @@
 }
 .post-header{
   display:flex;
- 
+ margin-top:15px;
 align-items:center;
   margin-left:35px;
   width:100%;
@@ -49,4 +49,21 @@ width:1000px;
 }.post-icons{
   font-size:35px;
   
+}
+.comment{
+  display:flex;
+  align-items:center;
+}
+h4{
+  margin-left:10px;
+  margin-right:8px;
+  
+}
+.thumbnail{
+  border-radius:100px;
+}
+.nav-icons{
+  display:flex;
+  width:12%;
+  justify-content: space-between;
 }

@@ -9,7 +9,7 @@ const PostContainer = props => {
           <div key ={user.timestamp}> 
           <div className="postContainer">
           <div className = "post-header">
-          <img  src={user.thumbnailUrl} alt={user.timestamp}/> <h3>{user.username}</h3>
+          <img className ="thumbnail" src={user.thumbnailUrl} alt={user.timestamp}/> <h3>{user.username}</h3>
           </div>
           <img className ="post-content" src={user.imageUrl} alt={user.timestamp}/>
           <div className="post-icons">
