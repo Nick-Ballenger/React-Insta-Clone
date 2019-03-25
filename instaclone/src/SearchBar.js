@@ -1,11 +1,14 @@
 import React from 'react'
 
 const SearchBar = props => {
-    console.log(props.comments);
+    
     return (
         <div>
-            <i class="fab fa-instagram"></i>
-            <i class="fas fa-hashtag"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fas fa-hashtag"></i>
+            <i className="far fa-compass"></i>
+            <i className="far fa-heart"></i>
+            <i className="far fa-user"></i>
             <form>
                 <input>
                 </input>

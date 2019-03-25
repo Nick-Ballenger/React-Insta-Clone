@@ -6,7 +6,9 @@ const PostContainer = props => {
   <div>    
       {props.postProps.map(user => 
           <div key ={user.timestamp}> 
-              <img src={user.imageUrl} alt={user.timestamp}/>
+          <img src={user.thumbnailUrl} alt={user.timestamp}/>
+          <img src={user.imageUrl} alt={user.timestamp}/>
+              
               <CommentSection 
                   comments={user.comments} />
           </div>
@@ -14,3 +16,4 @@ const PostContainer = props => {
   </div>)
 }
   export default PostContainer
+  
