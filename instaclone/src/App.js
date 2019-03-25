@@ -2,20 +2,21 @@ import React, { Component } from 'react';
 import PostContainer from './PostContainer'
 import './App.css';
 import dummyData from'./dummy-data.js'
+import SearchBar from './SearchBar'
 
 
 class App extends Component {
-  state = {
-   posts:dummyData 
+  constructor(){
+    super();
+    this.state={
+      posts : dummyData,
+    }
   }
   render() {
     return (
-
       <div className="App">
-        <header className="App-header">
-         <PostContainer posts={this.state.posts} />
-         
-        </header>
+         <SearchBar />
+        <PostContainer postProps = {this.state.posts} />
       </div>
     );
   }
