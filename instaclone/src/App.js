@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import user from './PostContainer'
+import PostContainer from './PostContainer'
 import './App.css';
 import dummyData from'./dummy-data.js'
-import PostContainer from './PostContainer';
+
 
 class App extends Component {
   state = {

@@ -4,11 +4,16 @@ function PostContainer(props) {
     console.log(props);
     return (
       <>
-        {props.dummyData.map(user => (
-          <div id={user.id} className="user">
-            <img src={user.thumbnailURL} alt={user.name} />
+        {props.posts.map(user => (
+          <div key={user.id} className="user">
+           
             <div>
-              <p>{user.name}</p>
+            <p>User: {user.username}</p>
+            <img src={user.thumbnailUrl} alt={user.name} />
+            <img src={user.imageUrl} alt={user.name} />
+            <p>Likes: {user.likes}</p>
+            <p>{user.timestamp}</p>
+
             </div>
           </div>
         ))}
