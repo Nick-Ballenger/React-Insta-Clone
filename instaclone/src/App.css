@@ -1,5 +1,11 @@
 
-
+.App{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+flex-direction:column;
+width:100%;
+}
 .search-wrapper{
   display:flex;
  
@@ -14,7 +20,8 @@
   display:flex;
   justify-content: center;
   align-items:center;
-  
+  border:3px solid slategrey;
+  width:1000px;
   
   flex-direction:column;
   /* flex-wrap:wrap; */
@@ -25,9 +32,12 @@
  margin-top:15px;
 align-items:center;
   margin-left:35px;
-  width:100%;
+
   height:auto;
   margin-bottom:35px;
+  margin-left:10px;
+ 
+width:1000px;
 
   
 }
@@ -83,4 +93,5 @@ h1{
 }
 .fab.fa-instagram{
   border-right:3px solid black;
+  
 }

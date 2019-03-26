@@ -3,13 +3,19 @@ import PropTypes from 'prop-types';
 import './App.css';
 
 
-const Comment  = props => {
+
+
+const Comment  = user => {
     return(
         <div className="comment">
-            <h4>{props.username} </h4>
-            <p>{props.text}</p>
+            <h4 className="user-comment">{user.username} </h4>
+            <p>{user.text}</p>
+            
             
         </div>
+         
+                     
+               
     )
 }
 
