@@ -20,7 +20,7 @@ const PostContainer = props => {
              
               
               
-              <CommentSection className="poop"
+              <CommentSection 
                   comments={user.comments} />
           </div>
           </div>
