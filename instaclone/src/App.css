@@ -1,0 +1,69 @@
+
+
+.search-wrapper{
+  display:flex;
+ 
+  align-items:center;
+  justify-content: space-around;
+}
+
+.post-wrapper{
+  
+  border-radius:5px;
+ margin:20px;
+  display:flex;
+  
+  
+  flex-direction:column;
+  flex-wrap:wrap;
+
+}
+.post-header{
+  display:flex;
+ margin-top:15px;
+align-items:center;
+  margin-left:35px;
+  width:100%;
+  height:auto;
+  margin-bottom:35px;
+
+  
+}
+h3{
+  margin-left:35px;
+  font-size: 30px;
+}
+.post-content{
+ margin-left:10px;
+ 
+width:1000px;
+}
+.postContainer{
+  border:3px solid slategrey;
+  margin-bottom:20px;
+  border-radius: 5px;
+  width:1024px;
+}
+.fab.fa-instagram{
+  font-size:55px;
+}.post-icons{
+  font-size:35px;
+  
+}
+.comment{
+  display:flex;
+  align-items:center;
+}
+h4{
+  margin-left:10px;
+  margin-right:8px;
+  
+}
+.thumbnail{
+  border-radius:100px;
+}
+.nav-icons{
+  display:flex;
+  width:12%;
+  justify-content: space-between;
+}
