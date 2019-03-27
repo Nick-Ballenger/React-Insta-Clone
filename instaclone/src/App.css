@@ -11,8 +11,12 @@ width:100%;
  
   align-items:center;
   justify-content: space-around;
+ 
+  width:100%;
 }
-
+.user{
+  margin-right:5px;
+}
 .post-wrapper{
   
   border-radius:5px;
@@ -62,21 +66,42 @@ width:1000px;
   font-size:35px;
   
 }
+.like-wrapper{
+  
+  display:flex;
+  justify-content:space-around;
+  width:300px;
+  align-items: center;
+}
 .comment{
   display:flex;
   align-items:center;
+  margin-left:80px;
+  width:1000px;
+  
 }
 h4{
   margin-left:10px;
   margin-right:8px;
   
 }
+.comment-wrapper{
+  margin-left:60px;
+  margin-bottom:20px;
+
+}
+.comment-input{
+  width:300px;
+  height:20px;
+  border-radius:5px;
+  border:2px solid slategrey;
+}
 .thumbnail{
   border-radius:100px;
 }
 .nav-icons{
   display:flex;
-  width:12%;
+  width:20%;
   justify-content: space-between;
 }
 h1{
@@ -94,4 +119,14 @@ h1{
 .fab.fa-instagram{
   border-right:3px solid black;
   
+}
+.post-thumb{
+  border-radius:100px;
+}
+.thumbnail{
+  width:95%;
+}
+.image{
+  
+  width:100%;
 }

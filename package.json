@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "fuse.js": "^3.4.4"
+    "fuse.js": "^3.4.4",
+    "reactstrap": "^7.1.0"
   }
 }

@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-import PostContainer from './PostContainer'
+import React from 'react'
 import './App.css';
 import dummyData from'./dummy-data.js'
-import SearchBar from './SearchBar'
+
+import WithAuthenticate from './WithAuthenticate'
+import Login from './Login'
+import PostPage from './PostPage'
 
 
-class App extends Component {
+
+class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -23,63 +26,17 @@ class App extends Component {
     }, 900);
   }
 
-  submitComment = (timestamp, comment) => {
-    const commentMatch = this.state.data.slice().filter(post => post.timestamp === timestamp).pop(),
-      commentUnMatch = this.state.data.slice().filter(post => post.timestamp !== timestamp);
-
-    commentMatch.comments.push(comment);
-
-    commentUnMatch.unshift(commentMatch);
-
-    this.setState({ data: commentUnMatch });
-  }
-
-  search = e => {
-    this.setState({ [e.target.name]: e.target.value });
-    const search = this.state.data.slice().filter(post => post.username.toLowerCase().includes((e.target.value).toLowerCase()) || post.comments.map(comm => comm.text.toLowerCase().includes((e.target.value).toLowerCase()) || comm.username.toLowerCase().includes((e.target.value).toLowerCase())).includes(true));
-    this.setState({ data: search });
-    if (this.state.searchValue.length === 0) {
-      this.setState({ data: dummyData });
-    }
-  }
 
   render() {
-    if (this.state.data.length === 0) {
-      return (
-        <div className='load'>
-       loading
-        </div>
-      )
-    } else {
-      return (
-        <div className="App">
-          <header>
-            
-            <SearchBar
-              search={this.search}
-              searchValue={this.state.searchValue}
-            />
-            <div>
-
-
-            
-            </div>
-
-          </header>
-          {this.state.data.map(post => (
-            <PostContainer
-              post={post}
-              
-              key={post.timestamp}
-              liker={this.liker}
-              liked={this.state.liked}
-              submitComment={this.submitComment}
-            />
-          ))}
-        </div>
-      );
-    }
+    return (
+      <div className="App">
+      <h2 className="Login">Login</h2>
+        <ComponentFromWithAuthenticate />
+      </div>
+    );
   }
 }
+
+const ComponentFromWithAuthenticate = WithAuthenticate(PostPage)(Login);
 
 export default App;
